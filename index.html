@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(255,255,255,0.95);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.heart {
+  font-size: 70px;
+  animation: beat 1s infinite;
+}
+
+h1 {
+  color: #ff4f81;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+button {
+  border: none;
+  padding: 13px 28px;
+  margin: 8px;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #ff4f81;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#message {
+  display: none;
+  color: #ff4f81;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@keyframes beat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="heart">❤️</div>
+
+  <h1>ဟေး... မင်းအတွက်ပါ 💕</h1>
+
+  <p>
+    မင်းကို ပြောချင်တာလေးတစ်ခုရှိတယ်...<br>
+    ဒီစာလေးကို ဖတ်ပြီးရင်<br>
+    နည်းနည်းလောက် ပြုံးပေးနော် 😊
+  </p>
+
+  <button onclick="showMessage()">နှိပ်ကြည့် ❤️</button>
+
+  <div id="message">
+    မင်းကို သဘောကျနေမိပြီနော် 🥺❤️
+  </div>
+
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
